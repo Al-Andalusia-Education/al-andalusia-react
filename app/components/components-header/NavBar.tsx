@@ -1,4 +1,8 @@
 import { IoIosArrowDown } from 'react-icons/io'
+import Universidad from './Submenus_NavBar/Universidad'
+import Estudios from './Submenus_NavBar/Estudios'
+import Recursos from './Submenus_NavBar/Recursos'
+import Proyectos from './Submenus_NavBar/Proyectos'
 
 const NavBar = () => {
   return (
@@ -23,44 +27,44 @@ const NavBar = () => {
                 href=''
                 className='font-semibold hover:text-[#D8B820] flex items-center'
               >
+                <div className="absolute top-full left-0 w-full h-10"></div>
                 LA UNIVERSIDAD
                 <IoIosArrowDown className='ml-1' />
               </a>
-              <ul className='absolute left-0 mt-0 w-48 bg-white shadow-lg border border-gray-100 hidden group-hover:block z-10'>
-                <li>
-                  <a
-                    href=''
-                    className='block px-4 py-2 text-sm hover:text-[#D8B820]'
-                  >
-                    Historia
-                  </a>
-                </li>
-              </ul>
+              <Universidad />
             </li>
-            <li>
+            <li className='relative group'>
               <a
                 href=''
                 className='font-semibold hover:text-[#D8B820] flex items-center'
               >
+                <div className="absolute top-full left-0 w-full h-10"></div>
                 ESTUDIOS
                 <IoIosArrowDown className='ml-1' />
               </a>
+              <Estudios />
             </li>
+            <li className='relative group'>
             <a
               href=''
               className='font-semibold hover:text-[#D8B820] flex items-center'
             >
+              <div className="absolute top-full left-0 w-full h-10"></div>
               RECURSOS
               <IoIosArrowDown className='ml-1' />
             </a>
-            <li>
+            <Recursos />
+            </li>
+            <li className='relative group'>
               <a
                 href=''
                 className='font-semibold hover:text-[#D8B820] flex items-center'
               >
                 PROYECTOS
+                <div className="absolute top-full left-0 w-full h-10"></div>
                 <IoIosArrowDown className='ml-1' />
               </a>
+              <Proyectos />
             </li>
             <li>
               <a
